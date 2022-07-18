@@ -13,9 +13,11 @@ import Table from "./components/Table";
 
 
 function App() {
+  let header = "HTML Table from JS";
+  let name = "My Name Is Firoz";
   return (
     <div>
-      <Header />
+      <Header heading = {header} name={name}/>
       <Table />
       <Footer />
     </div>

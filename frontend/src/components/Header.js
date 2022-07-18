@@ -1,6 +1,10 @@
-function Header() {
+function Header(props) {
+    let headerData = "This Data is in header page"
     return (
-        <h2 className="centertext">HTML Table</h2>
+        <div>
+            <h2 className="centertext">{props.heading} <br></br> {props.name}</h2>
+            <h3 className="centertext">{headerData}</h3>
+        </div>
   )
   }
   
